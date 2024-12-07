@@ -1,0 +1,295 @@
+*{
+    font-family: montserrat;
+}
+
+body
+{
+background: hsl(0, 17%, 98%);
+font-family: montserrat;
+}
+.main
+{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+    background-size: cover;
+    background-position: center;
+}
+.section-padding{
+    padding: 100px 0;
+}
+
+#notification {
+    display: none;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: bold;
+}
+
+body{
+    overflow-x: hidden;
+}
+.carousel-item{
+    height: 100vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2;
+}
+
+.carousel-caption h5{
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+}
+.footers{
+    overflow-x: hidden;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 7);
+    z-index: 0;
+}
+
+.navbar-nav a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.navbar-light .navbar-brand{
+    color: #000;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: #000;
+}
+
+.navbar-light .navbar-nav .navbar-link{
+    color: #000;
+}
+.w-100{
+    height: 100vh;
+}
+
+.about-img{
+    text-align: left;
+    width: fit-content;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 767px){
+    .navbar-nav{ 
+        text-align: center; 
+    }
+    .carousel-caption{ 
+        bottom: 125px;
+    }
+    .carousel-caption h5{
+        font-size: 18px;
+    }
+.carousel-caption a{
+    padding: 10px 15px;
+}
+}
+.carousel-caption p{
+    width: 100%;
+    line-height: 1.6;
+    font-size: 12px;
+} 
+
+.contact-us{
+    flex: 30%;
+    width: 300px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.contact-col{
+    flex-basis: 33%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.form{
+    padding: 125px;
+}
+.contact-col input, .contact-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    
+}
+
+/* Gaya tim baru */
+.tim-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.tim-anggota {
+    background-color: transparent;
+    border: none;
+    padding: 1em;
+    text-align: center;
+    max-width: 250px;
+
+}
+
+.tim-anggota img {
+    max-width: 100%;
+    height: auto;
+}
+
+.tim-anggota h3 {
+    margin: 1em 0 0.5em;
+}
+
+.tim-anggota p {
+    margin: 0 0 1em;
+    font-weight: bold;
+    color: #777;
+}
+
+.app-section {
+    padding: 50px 0;
+}
+.app-image img {
+    max-width: 100%;
+    height: auto;
+}
+.app-info h1 {
+    font-size: 2rem;
+font-weight: bold;
+}
+.app-info p {
+    font-size: 1rem;
+    color: #333;
+}
+.app-info ul {
+padding-left: 1.5rem;
+}
+.app-info ul li {
+    margin-bottom: 10px;
+}
+.download-buttons img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.promo-section {
+text-align: center;
+padding: 50px 0;
+}
+.promo-section h1 {
+font-size: 2rem;
+font-weight: bold;
+margin-bottom: 30px;
+}
+.promo-card img {
+width: 100%;
+height: auto;
+border-radius: 10px;
+transition: transform 0.3s ease;
+margin: auto;
+}
+.promo-card img:hover {
+transform: scale(1.05);
+}
+
+.promo-grid {
+    padding: 50px 0;
+  }
+  .promo-grid img {
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+  }
+  .promo-grid img:hover {
+    transform: scale(1.05);
+  }
+  .promo-item {
+    text-align: center; /* Gambar berada di tengah kolom */
+    
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        min-height: 100vh; /* Memastikan footer menutupi layar */
+      }
+.kategori {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    /* padding: 10px; */
+
+    width: 610px;
+    gap: 5px;
+  }
+  .grid-item {
+    /* padding: 20px; */
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .justify-content-center {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .instagram-link {
+    display: inline-block; /* Agar elemen menjadi blok sebaris */
+    background-color: #000000; /* Warna latar belakang (sesuai tema desain) */
+    color: #ffffff; /* Warna teks */
+    padding: 10px 20px; /* Memberikan ruang di dalam latar */
+    border-radius: 50px; /* Membuat bentuk kapsul */
+    text-decoration: none; /* Menghapus garis bawah pada link */
+    font-size: 16px; /* Ukuran teks */
+    font-weight: bold; /* Menebalkan teks */
+    transition: all 0.3s ease; /* Memberikan animasi saat hover */
+  }
+  
+  .instagram-link:hover {
+    background-color: #a7a7a7; /* Warna saat di-hover */
+    color: #000000; /* Warna teks saat di-hover */
+  }
+  
